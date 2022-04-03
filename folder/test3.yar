@@ -3,7 +3,7 @@ include "test2.yar"
 
 rule A {
   strings: $s = "Welcome!"
-  condition: contains_base64 or $s
+  condition: Prime_Constants_long or $s
 }
 
 rule B {
