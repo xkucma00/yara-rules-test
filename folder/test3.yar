@@ -7,5 +7,5 @@ rule A {
 }
 
 rule B {
-  condition: A or (not Prime_Constants_Long and maldoc_OLE_file_magic_number)
+  condition: A or (not Prime_Constants_long and maldoc_OLE_file_magic_number)
 }
