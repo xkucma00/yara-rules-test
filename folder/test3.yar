@@ -7,5 +7,5 @@ rule A {
 }
 
 rule C {
-  condition: false
+  condition: false or true
 }
