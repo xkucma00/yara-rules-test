@@ -21,5 +21,7 @@ rule Maldoc_CVE_2017_11882 : Exploit {
 }
 
 rule A {
+  meta: author = "ja"
   condition: Prime_Constants_long and maldoc_OLE_file_magic_number
 }
+
