@@ -40,7 +40,7 @@ rule Contains_DDE_Protocol
         (uint32be(0) == 0x7B5C7274 or $doc at 0 ) and $s0 and ($h0 or $s1)
 } */
 
-/* not part of the original ruleset and not under GNU-GPLv2 licence */
+/* not part of the original ruleset */
 rule A {
   condition: Prime_Constants_long and maldoc_OLE_file_magic_number
 }
