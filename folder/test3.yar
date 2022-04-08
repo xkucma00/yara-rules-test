@@ -24,7 +24,7 @@ rule Contains_DDE_Protocol
                 ($doc at 0) and 2 of ($s1, $s2, $s3, $s4)
 }
 
-/*rule Maldoc_CVE_2017_11882 : Exploit {
+rule Maldoc_CVE_2017_11882 : Exploit {
     meta:
         description = "Detects maldoc With exploit for CVE_2017_11882"
         author = "Marc Salinas (@Bondey_m)"
@@ -38,7 +38,7 @@ rule Contains_DDE_Protocol
 
     condition: 
         (uint32be(0) == 0x7B5C7274 or $doc at 0 ) and $s0 and ($h0 or $s1)
-}*/
+}
 
 /* not part of the original ruleset */
 rule A {
