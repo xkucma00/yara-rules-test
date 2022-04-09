@@ -4,7 +4,7 @@ include "test2.yar"
     This Yara ruleset is under the GNU-GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html) and open to any user or organization, as long as you use it under this license.
 */
 
-rule Contains_DDE_Protocol
+/* rule Contains_DDE_Protocol
 {
         meta:
                 author = "Nick Beede"
@@ -22,9 +22,9 @@ rule Contains_DDE_Protocol
 
         condition:
                 ($doc at 0) and 2 of ($s1, $s2, $s3, $s4)
-}
+} */
 
-/*rule Maldoc_CVE_2017_11882 : Exploit {
+rule Maldoc_CVE_2017_11882 : Exploit {
     meta:
         description = "Detects maldoc With exploit for CVE_2017_11882"
         author = "Marc Salinas (@Bondey_m)"
@@ -38,7 +38,7 @@ rule Contains_DDE_Protocol
 
     condition: 
         (uint32be(0) == 0x7B5C7274 or $doc at 0 ) and $s0 and ($h0 or $s1)
-}*/
+}
 
 /* not part of the original ruleset */
 rule A {
