@@ -3,7 +3,7 @@
 */
 rule Prime_Constants_long {
 	meta:
-		author = "_pusher_"
+		author = "_pusher__"
 		description = "List of primes [long]"
 		date = "2016-07"
 	strings:
