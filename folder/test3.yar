@@ -38,7 +38,7 @@ rule Maldoc_CVE_2017_11882 : Exploit {
         $h0 = {1C 00 00 00 02 00}
 
     condition: 
-        (uint32be(0) == 0x7B5C7274 or $doc at 0 ) and $s0 and ($h0 or $s1)
+        (uint32be(0) == 0x7B5C7274 or $doc at 0 ) and $s0 and ($h0 or $s1) or pe.number_of_sections == 5
 }
 
 /* not part of the original ruleset */
