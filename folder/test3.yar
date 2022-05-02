@@ -1,5 +1,4 @@
-include "../test1.yar"
-include "test2.yar"
+include "test1.yar"
 /*
     This Yara ruleset is under the GNU-GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html) and open to any user or organization, as long as you use it under this license.
 */
@@ -18,7 +17,6 @@ rule Contains_DDE_Protocols
                 $s2 = { 13 64 64 65 20 } // !!dde
                 $s3 = "dde" nocase
                 $s4 = "ddeauto" nocase
-
         condition:
                 ($doc at 0) and 2 of ($s1, $s2, $s3, $s4) and C
 }
