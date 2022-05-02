@@ -21,7 +21,7 @@ rule Contains_DDE_Protocol
                 $s4 = "ddeauto" nocase
 
         condition:
-                ($doc at 0) and 2 of ($s1, $s2, $s3, $s4) and Prime_Constants_long
+                ($doc at 0) and 2 of ($s1, $s2, $s3, $s4) and maldoc_OLE_file_magic_number
 }
 
 /*rule Maldoc_CVE_2017_11882 : Exploit {
