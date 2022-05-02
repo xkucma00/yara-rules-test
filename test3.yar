@@ -1,4 +1,4 @@
-import "test2.yar"
+include "test2.yar"
 
 private rule relies_on_fail {
   strings:
