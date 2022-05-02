@@ -42,7 +42,7 @@ rule Contains_DDE_Protocol
 }*/
 
 /* not part of the original ruleset */
-rule A {
+/*rule A {
   condition: Prime_Constants_long and maldoc_OLE_file_magic_number
-}
+}*/
 
