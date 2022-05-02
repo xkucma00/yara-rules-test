@@ -7,7 +7,6 @@ rule Maldoc_CVE_2017_11882 : Exploit {
         author = "Marc Salinas (@Bondey_m)"
         reference = "c63ccc5c08c3863d7eb330b69f96c1bcf1e031201721754132a4c4d0baff36f8"
         date = "2017-10-20"
-        modified = "true"
     strings:
         $doc = "d0cf11e0a1b11ae1"
         $s0 = "Equation"
