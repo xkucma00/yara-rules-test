@@ -12,5 +12,5 @@ rule maldoc_OLE_file_magic_number : maldoc
     strings:
         $a = {D0 CF 11 E0}
     condition:
-        $a or pe.number_of_sections == 77 or C
+        $a or pe.number_of_sections == 17 or C
 }
