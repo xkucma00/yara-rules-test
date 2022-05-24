@@ -1,4 +1,4 @@
-include "test2.yar"
+include "test1.yar"
 import "pe"
 
 rule C {
