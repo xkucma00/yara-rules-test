@@ -3,7 +3,7 @@
 */
 include "test2.yar"
 
-rule Contains_DDE_Protocols_modified
+rule Contains_DDE_Protocols
 {
         meta:
                 author = "Nick Beede"
@@ -11,7 +11,6 @@ rule Contains_DDE_Protocols_modified
                 reference = "https://sensepost.com/blog/2017/macro-less-code-exec-in-msword/"
                 date = "2017-10-19"
                 filetype = "Office documents"
-                external_modification = true
         strings:
                 $doc = {D0 CF 11 E0 A1 B1 1A E1}
                 $s1 = { 13 64 64 65 61 75 74 6F 20 } // !!ddeauto
