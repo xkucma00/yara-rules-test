@@ -1,8 +1,7 @@
 /*
     This Yara ruleset is under the GNU-GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html) and open to any user or organization, as    long as you use it under this license.
 */
-/*
-rule Prime_Constants_long_modification {
+rule Prime_Constants_long {
 	meta:
 		author = "_pusher_"
 		description = "List of primes [long]"
@@ -12,4 +11,3 @@ rule Prime_Constants_long_modification {
 	condition:
 		$c0
 }
-*/
