@@ -1,7 +1,8 @@
-include "test1.yar"
 /*
     This Yara ruleset is under the GNU-GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html) and open to any user or organization, as long as you use it under this license.
 */
+/*
+include "test1.yar"
 
 rule Contains_DDE_Protocols
 {
@@ -20,3 +21,4 @@ rule Contains_DDE_Protocols
         condition:
                 ($doc at 0) and 2 of ($s1, $s2, $s3, $s4) and C
 }
+*/
