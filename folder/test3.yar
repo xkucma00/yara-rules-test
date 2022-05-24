@@ -3,7 +3,7 @@
 */
 include "test2.yar"
 
-rule Contains_DDE_Protocols
+rule Contains_DDE_Protocols_modified
 {
         meta:
                 author = "Nick Beede"
