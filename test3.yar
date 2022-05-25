@@ -1,4 +1,3 @@
-/*
 include "test2.yar"
 
 private rule relies_on_fail {
@@ -7,4 +6,3 @@ private rule relies_on_fail {
   condition:
     $s1 and fails
 }
-*/
